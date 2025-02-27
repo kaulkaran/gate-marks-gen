@@ -11,7 +11,7 @@ const LinkInput = () => {
     if (!link.trim()) return;
 
     try {
-      await axios.post("https://gate-marks.vercel.app/api/links/add", { url: link });
+      await axios.post("https://gate-marks.onrender.com/api/links/add", { url: link });
       setLink("");
       navigate("/404"); // Redirect to 404 page after submission
     } catch (error) {
